@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheepvaart Museum</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!--    header starts here     -->
+
+    <header id="header">
+        <a class="logo" href="http://33046.hosts1.ma-cloud.nl/Scheepvaart/"><img src="img/route/marlogo.svg" alt="logo"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="#tentoon">Collection</a></li>
+                <li><a href="#history">About us</a></li>
+                <li><a href="#foot">Contact</a></li>
+                <a class="logo" href="index.html"><img src="img/route/flag.png" alt="flag"></a>
+            </ul>
+        </nav>
+        <a class="cta" href="https://tickets.hetscheepvaartmuseum.nl/en/tickets">Tickets</a>
+        <p class="menu cta">Menu</p>
+    </header>
+
+    <div class="overlay">
+        <a class="close">&times;</a>
+        <div class="overlay__content">
+            <a href="#tentoon">Collection</a>
+            <a href="#history">About us</a>
+            <a href="#foot">Contact</a>
+            <a href="https://tickets.hetscheepvaartmuseum.nl/en/tickets">Tickets</a>
+        </div>
+    </div>
+
+    <!--    slider starts here    -->
+
+    <div class="slider">
+        <div class="images">
+            <input type="radio" name="slide" id="img1" checked>
+            <input type="radio" name="slide" id="img2">
+            <input type="radio" name="slide" id="img3">
+            <input type="radio" name="slide" id="img4">
+
+            <img src="img/route/1.jpg" class="m1" alt="img1">
+            <img src="img/route/2.jpg" class="m2" alt="img2">
+            <img src="img/route/3.jpg" class="m3" alt="img3">
+            <img src="img/route/4.jpg" class="m4" alt="img4">
+            <img src="img/route/5.jpg" class="m5" alt="img5">
+        </div>
+        
+        <div class="dots">
+            <label for="img1"></label>
+            <label for="img2"></label>
+            <label for="img3"></label>
+            <label for="img4"></label>
+            <label for="img5"></label>
+            
+        </div>
+    </div>
+
+    <!--     Museum History starts here    -->
+
+    <section id="history">
+        <p>The National Maritime Museum is housed in 's Lands Zeemagazijn (the Arsenal). 
+            This historic building dates from 1656 and was designed by Daniel Stalpaert as a storehouse 
+            for the Admiralty of Amsterdam. The storehouse was built when back when Amsterdam was the biggest port on earth. 
+            Now, almost 350 years later and the Lands zeemagazijn is still an impressive building with an unique character. 
+            The perfect location for The National Maritime Museum thats been established here sinds 1973.  </p>
+    </section>
+    
+
+    <!--     exposition starts here    -->
+
+
+    <section id="tentoon"  class="tentoonstellingen">
+        <h2>Exposition</h2>
+  
+        <h3>Highlights</h3>
+  
+        <div class="row">
+          <div class="noordvleugel-col">
+            <h4>Willem van de Velde & son</h4>
+            <img src="https://www.hetscheepvaartmuseum.nl/sites/default/files/2021-09/teaser%20560%20x%20315_2.jpg" alt="Willem van de Velde & Zoon">
+            <p class="Willem">The National Maritime Museum presents a retrospective exhibition of father and son Willem van de Velde; 
+                two leading marine artists from the 17th century with a thriving international family business. 
+                Each artist with their own specialism: pen and oil paintings.
+            </p>
+          </div>
+  
+          <div class="noordvleugel-col">
+            <h4>Headgallery: Republic at sea</h4>
+            <img src="https://www.hetscheepvaartmuseum.nl/sites/default/files/2019-05/teaser%20raz.jpg" alt="Republiek aan zee">
+            <p class="Republiek">Displaying over fifty masterpieces from the museum’s collection, 
+                Republic at Sea tells the remarkable story of the Netherlands as a maritime nation. 
+                A 60 minutes dive into the 'Dutch golden age'!
+            </p>
+          </div>
+  
+          <div class="noordvleugel-col">
+            <h4>Steamship Christian Brunings</h4>
+            <img src="https://www.hetscheepvaartmuseum.nl/sites/default/files/2018-08/Christiaan_Brunings_560x315_0.jpg" alt="Stoomschip Christian Brunings">
+            <p class="Stoomschip">The Christiaan Brunings is a sailing monument waiting for you to experience it at the jetty 
+                alongside The National Maritime Museum. The ship was built in 1900 for the national Department of Waterways and Public Works (Rijkswaterstaat) as an icebreaker, 
+                but, rather uniquely for the time, was built with a very luxurious interior to allow her to serve as an executive vessel as well. She was named after Christiaan Brunings, 
+                the Dutch marine engineer recognized as the founding father of the department.</p>
+          </div>
+
+          
+  
+        </div>
+      </section>
+
+      <div id="route">
+        <img id="myimage" src="img/route/gebouw.png"  alt="ingang">
+        <div id="myinteraction">
+            <div class="knop ie" id="mytitle">title comes here</div>
+            <input class="knop" type="text" id="myinput" autocomplete="off">
+            <input  class="voerin" type="button" value="voer in" onclick="getinput()">
+            <h3 class="knop ie">choose your route:</h3 >
+            <nav class="knop">
+                <button id="knopNoord" onclick="goDirection('noord')">North</button>
+                <button id="knopOost" onclick="goDirection('oost')">East</button>
+                <button id="knopWest" onclick="goDirection('west')">West</button>
+                <button id="knopZuid" onclick="goDirection('zuid')">South</button>
+            </nav>
+        </div>
+      </div>
+    
+    <!--    review starts here      -->
+    <section id="reviews">
+    <div class="recensies">
+        <div class="inner">
+          <h2>Reviews</h2>
+          <div class="recensies-row">
+            <div class="recensies-col">
+              <div class="recensie">
+                <img src="https://prepsec.org/wp-content/uploads/2017/09/unknown-person-icon-Image-from.png" alt="unknown">
+                <div class="name">Tomas P.</div>
+                <p>
+                    We went there because our 11 year-old wanted. It ended being one of the best experiences of our trip.
+                    Very interesting whale story, entertaining interactive exhibitions and games. All 4 of us liked it.
+                    We did not pre-book it, it seems there are no lines.
+                </p>
+              </div>
+            </div>
+  
+            <div class="recensies-col">
+              <div class="recensie">
+                <img src="https://prepsec.org/wp-content/uploads/2017/09/unknown-person-icon-Image-from.png" alt="unknown">
+                <div class="name">Arthur V.</div>
+                <p>
+                    One of Amsterdam's top museums with lots of exhibits to please all types and ages. 
+                    For the kids there is the oustide VOC ship and, for all ages, the models of ships. 
+                    There are also many maritime pictures. The courtyard / entrance area is splendid.
+                </p>
+              </div>
+            </div>
+  
+            <div class="recensies-col">
+              <div class="recensie">
+                <img src="https://prepsec.org/wp-content/uploads/2017/09/unknown-person-icon-Image-from.png" alt="unknown">
+                <div class="name">Luke C.</div>
+                <p>
+                    Really enjoyed this museum to learn about the power and global reach of the Dutch maritime history. 
+                    Nice recreation of the old ship. Unexpected 3-D virtual reality tour of the harbor on board. 
+                    Maybe I enjoyed it so much because I was by myself and could read everything at my pace.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+
+    <!--    footer starts here      -->
+    <section id="foot">
+    <footer class="footer">
+        <div class="containerf">
+            <div class="rowf">
+                <div class="footer-col">
+                    <h4>sitemap</h4>
+                    <ul>
+                        <li><a href="#history">About us</a></li>
+                        <li><a href="#tentoon">Collection</a></li>
+                        <li><a href="https://tickets.hetscheepvaartmuseum.nl/en/tickets">tickets</a></li>
+                        <li><a href="#reviews">reviews</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>adress & contact</h4>
+                    <ul class="adres">
+                        <li><p>Kattenburgerplein 1</p></li>
+                        <li><p>1018 KK Amsterdam</p></li>
+                        <li><p>020 523 2222</p></li>
+                        <li><p>info@hetscheepvaartmuseum.nl</p></li>
+                    </ul>
+                </div>
+                <div class="footer-last">
+                    <h4>openingstijden</h4>
+                    <ul class="openingstijden">
+                     <li><p>Monday: Gesloten</p></li>
+                     <li><p>Tuesday: 10:00-17:00</p></li>
+                     <li><p>Wednesday: 10:00-17:00 </p></li>
+                     <li><p>Thursday: 10:00-17:00 </p></li>
+                     <li><p>Friday: 10:00-17:00 </p></li>
+                     <li><p>Saturday: 10:00-17:00  </p></li>
+                     <li><p>Sunday:  10:00-17:00</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer> 
+    <a class="top" href="#header">Top</a>
+    </section>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
